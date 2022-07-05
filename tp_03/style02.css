@@ -1,0 +1,19 @@
+.container {
+    display: absolute;
+text-align: center;
+    margin-top: 10%;
+}
+
+.list{
+display: flex;
+justify-content: center;
+}
+
+h1{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+button{
+    margin: 15px;
+}
