@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style04.css">
+    <title>V-Model</title>
+</head>
+<body>
+    <div id="app">
+        <form>
+            
+            <label for="fname">First Name</label>
+            <input v-on:keyup="afficherUserName($event)" v-bind:value="nameUser" type="text" name="fname">
+            <p>{{nameUser}}</p>
+            <label for="lname">Last Name</label>
+            <input v-model="userName" type="text" name="lname">
+            <p>{{userName}}</p>
+          </form>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script04.js"></script>
+</body>
+</html>
