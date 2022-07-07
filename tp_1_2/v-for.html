@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style011.css">
+    <title>Tuto V-If</title>
+</head>
+<body id="app">
+    <div class="container">
+        <h1><strong>Tuto V-If</strong></h1>
+        <h1>WatchList <img src="pellicule.jpg" height="35" width="45"> (Filme à voir)</h1>
+        <input v-model="nomFilm" type="text" placeholder="">
+        <br>
+        <input v-on:click="add()"id="btn0" type="button" value="Ajouter à la liste">
+        <hr>
+        <div v-if="mesFilms.length !== 0">
+        <p>Il n'y a pas encore de filme dans la liste.</p>
+    </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script011y.js"></script>
+</body>
+</html>

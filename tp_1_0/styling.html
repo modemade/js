@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style09.css">
+    <title>Page Styling</title>
+</head>
+<body id="app">
+    <div class="container">
+        <div class="number1">
+            <input v-model="world" 
+            @class="{}" type="text">
+            <p class="number">{{world}}</p>
+        </div>
+        <div class="number2">
+            <input v-model="maColor" type="text">
+            <p v-bind:style="{backgroundColor: maColor}">hello world</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script09.js"></script>
+</body>
+</html>

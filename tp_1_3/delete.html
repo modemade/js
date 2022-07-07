@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style012.css">
+    <title>Tuto V-If</title>
+</head>
+<body id="app">
+    <div class="container">
+        <h1><strong>Tuto V-If</strong></h1>
+        <h1>WatchList <img src="pellicule.jpg" height="35" width="45"> (Filme à voir)</h1>
+        <input v-model="nomFilm" type="text" placeholder="">
+        <br>
+        <input v-on:click="add()"class="btn0" type="button" value="Ajouter à la liste">
+        
+        <hr>
+        <ul v-if="mesFilms.length !== 0" >
+            <li v-for="(tmp, index) in mesFilms" v-on:click="remove(tmp)">{{index}} {{tmp}}
+            <input v-on:click="remove(tmp)"class="btn0" type="button"  value="Supprimer un element">
+        </li>
+        </ul>
+        <p v-else>Il n'y a pas encore de filme dans la liste.</p>
+    
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script012.js"></script>
+</body>
+</html>
