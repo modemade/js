@@ -8,3 +8,7 @@
 input{
     margin: 10px;
 }
+
+.span0{
+    cursor: pointer;
+}

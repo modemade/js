@@ -17,8 +17,8 @@
         
         <hr>
         <ul v-if="mesFilms.length !== 0" >
-            <li v-for="(tmp, index) in mesFilms" v-on:click="remove(tmp)">{{index}} {{tmp}}
-            <input v-on:click="remove(tmp)"class="btn0" type="button"  value="Supprimer un element">
+            <li v-for="(tmp, index) in mesFilms" v-on:click="remove(index)">{{index}} {{tmp}}
+            <span v-on:click="remove(index)" class="span0">❎</span>
         </li>
         </ul>
         <p v-else>Il n'y a pas encore de filme dans la liste.</p>
